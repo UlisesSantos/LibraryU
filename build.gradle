@@ -17,8 +17,22 @@ repositories {
 	mavenCentral()
 }
 
+configurations {
+	all {
+		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+		exclude group: 'commons-logging', module: 'commons-logging'
+	}
+}
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-devtools'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-log4j2'
+	implementation 'com.mysql:mysql-connector-j:9.2.0'
+	implementation 'com.google.code.gson:gson:2.13.0'
+	implementation 'org.apache.commons:commons-configuration2:2.11.0'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

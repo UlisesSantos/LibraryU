@@ -10,20 +10,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Class to get variables from application.properties
+ * Class to get the variables from instance-name.properties
  * */
-public final class App {
+public final class Env {
 
-    //File Properties Name
-    private static final String APPLICATION_PROPERTIES = "application.properties";
-
-    // Application Name Key
-    private static final String APPLICATION_NAME_KEY = "spring.application.name";
-
-    // Private Keys from Environment Variables
-    private static final String INSTANCE_NAME_KEY = "INSTANCE_NAME";
-    private static final String LOGS_PATH_KEY = "LOGS_PATH";
-    public static final String PROPERTIES_PATH_KEY = "PROPERTIES_PATH";
 
     private static PropertiesConfiguration configuration;
 
@@ -34,7 +24,7 @@ public final class App {
             ReloadingFileBasedConfigurationBuilder<PropertiesConfiguration> builder =
                     new ReloadingFileBasedConfigurationBuilder<>(PropertiesConfiguration.class)
                             .configure(params.properties()
-                                    .setFileName(APPLICATION_PROPERTIES)
+                                    .setFileName(String.format("%s/%s.properties", App.PROPERTIES_PATH, App.INSTANCE_NAME))
                                     .setEncoding(StandardCharsets.UTF_8.name())
                                     .setThrowExceptionOnMissing(true)
                                     .setListDelimiterHandler(null)
@@ -54,22 +44,25 @@ public final class App {
     }
 
     /**
-     * Function to get a property by a key
+     * Method to get a property
      * @param key Key of the property
-     * @return property
      * */
-    public static String getProperty(String key){
-        return configuration.getString(key);
+    public static String getProperty(String key) {return configuration.getString(key);}
+
+    /**
+     * Method to get a property by prefix
+     * @param key key of the property
+     * @param prefix prefix of the property
+     * */
+    public static String getPropertyByPrefix(String prefix, String key){
+        String instanceKey = String.format("%s.%s.%s", App.INSTANCE_NAME,prefix,key);
+        String property = (String) configuration.getString(instanceKey);
+        if (property == null || property.trim().isEmpty()){
+            throw new RuntimeException("Can't find the property: " + instanceKey);
+        }
+        return property;
     }
 
-    //Application Name
-    public static final String APPLICATION_NAME = getProperty(APPLICATION_NAME_KEY);
-    //Logs Path
-    public static final String LOGS_PATH = System.getProperty(LOGS_PATH_KEY);
-    //Instance Name
-    public static final String INSTANCE_NAME = System.getProperty(INSTANCE_NAME_KEY);
-
-    public static final String PROPERTIES_PATH = System.getProperty(PROPERTIES_PATH_KEY);
 
 
 }

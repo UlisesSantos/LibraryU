@@ -1,0 +1,34 @@
+[INFO]|2025-04-18 19:36:22,897||LibraryUApplication|logStarting|[]|Starting LibraryUApplication using Java 21.0.6 with PID 3181 (/Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU/build/classes/java/main started by ulisesmorales in /Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU)
+[DEBUG]|2025-04-18 19:36:22,899||LibraryUApplication|logStarting|[]|Running with Spring Boot v3.4.4, Spring v6.2.5
+[INFO]|2025-04-18 19:36:22,899||LibraryUApplication|logStartupProfileInfo|[]|No active profile set, falling back to 1 default profile: "default"
+[INFO]|2025-04-18 19:36:22,911||DevToolsPropertyDefaultsPostProcessor|logTo|[]|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]|2025-04-18 19:36:22,911||DevToolsPropertyDefaultsPostProcessor|logTo|[]|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]|2025-04-18 19:36:23,192||TomcatWebServer|initialize|[]|Tomcat initialized with port 8080 (http)
+[INFO]|2025-04-18 19:36:23,198||StandardService|log|[]|Starting service [Tomcat]
+[INFO]|2025-04-18 19:36:23,198||StandardEngine|log|[]|Starting Servlet engine: [Apache Tomcat/10.1.39]
+[INFO]|2025-04-18 19:36:23,210||[/]|log|[]|Initializing Spring embedded WebApplicationContext
+[INFO]|2025-04-18 19:36:23,210||ServletWebServerApplicationContext|prepareWebApplicationContext|[]|Root WebApplicationContext: initialization completed in 299 ms
+[WARN]|2025-04-18 19:36:23,307||AnnotationConfigServletWebServerApplicationContext|refresh|[]|Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+[INFO]|2025-04-18 19:36:23,308||StandardService|log|[]|Stopping service [Tomcat]
+[INFO]|2025-04-18 19:36:23,313||ConditionEvaluationReportLogger|logMessage|[]|
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR]|2025-04-18 19:36:23,319||LoggingFailureAnalysisReporter|report|[]|
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+

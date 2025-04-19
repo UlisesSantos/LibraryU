@@ -49,6 +49,11 @@ public final class App {
         }
     }
 
+    /**
+     * Function to get a property by a key
+     * @param key
+     * @return property
+     * */
     public static String getProperty(String key){
         return configuration.getString(key);
     }

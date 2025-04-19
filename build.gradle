@@ -32,6 +32,8 @@ dependencies {
 	implementation 'com.mysql:mysql-connector-j:9.2.0'
 	implementation 'com.google.code.gson:gson:2.13.0'
 	implementation 'org.apache.commons:commons-configuration2:2.11.0'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.4.4'
+	implementation 'commons-beanutils:commons-beanutils:1.10.1'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'

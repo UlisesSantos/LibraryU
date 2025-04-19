@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Class to get the variables from instance-name.properties
+ * Class to get the variables from application-name.properties
  * */
 public final class Env {
 
@@ -24,7 +24,7 @@ public final class Env {
             ReloadingFileBasedConfigurationBuilder<PropertiesConfiguration> builder =
                     new ReloadingFileBasedConfigurationBuilder<>(PropertiesConfiguration.class)
                             .configure(params.properties()
-                                    .setFileName(String.format("%s/%s.properties", App.PROPERTIES_PATH, App.INSTANCE_NAME))
+                                    .setFileName(String.format("%s/%s.properties", App.PROPERTIES_PATH, App.APPLICATION_NAME))
                                     .setEncoding(StandardCharsets.UTF_8.name())
                                     .setThrowExceptionOnMissing(true)
                                     .setListDelimiterHandler(null)

@@ -2920,3 +2920,709 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'libraryu'
 [INFO]|2025-04-19 16:34:03,608||LocalContainerEntityManagerFactoryBean|destroy|[]|Closing JPA EntityManagerFactory for persistence unit 'default'
 [INFO]|2025-04-19 16:34:03,610||HikariDataSource|close|[]|HikariPool-1 - Shutdown initiated...
 [INFO]|2025-04-19 16:34:03,613||HikariDataSource|close|[]|HikariPool-1 - Shutdown completed.
+[INFO]|2025-04-19 16:38:28,737||LibraryUApplication|logStarting|[]|Starting LibraryUApplication using Java 21.0.6 with PID 2145 (/Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU/build/classes/java/main started by ulisesmorales in /Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU)
+[DEBUG]|2025-04-19 16:38:28,740||LibraryUApplication|logStarting|[]|Running with Spring Boot v3.4.4, Spring v6.2.5
+[INFO]|2025-04-19 16:38:28,740||LibraryUApplication|logStartupProfileInfo|[]|No active profile set, falling back to 1 default profile: "default"
+[INFO]|2025-04-19 16:38:28,754||DevToolsPropertyDefaultsPostProcessor|logTo|[]|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]|2025-04-19 16:38:28,754||DevToolsPropertyDefaultsPostProcessor|logTo|[]|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]|2025-04-19 16:38:28,960||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]|2025-04-19 16:38:28,969||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+[INFO]|2025-04-19 16:38:29,161||TomcatWebServer|initialize|[]|Tomcat initialized with port 8080 (http)
+[INFO]|2025-04-19 16:38:29,168||StandardService|log|[]|Starting service [Tomcat]
+[INFO]|2025-04-19 16:38:29,168||StandardEngine|log|[]|Starting Servlet engine: [Apache Tomcat/10.1.39]
+[INFO]|2025-04-19 16:38:29,181||[/]|log|[]|Initializing Spring embedded WebApplicationContext
+[INFO]|2025-04-19 16:38:29,182||ServletWebServerApplicationContext|prepareWebApplicationContext|[]|Root WebApplicationContext: initialization completed in 427 ms
+[WARN]|2025-04-19 16:38:29,215||AnnotationConfigServletWebServerApplicationContext|refresh|[]|Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [com/school/library/Java/LibraryU/configuration/AppContext.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [com/school/library/Java/LibraryU/configuration/AppContext.class]: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception with message: org/apache/commons/beanutils/BeanIntrospector
+[INFO]|2025-04-19 16:38:29,216||StandardService|log|[]|Stopping service [Tomcat]
+[INFO]|2025-04-19 16:38:29,223||ConditionEvaluationReportLogger|logMessage|[]|
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR]|2025-04-19 16:38:29,229||SpringApplication|reportFailure|[]|Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [com/school/library/Java/LibraryU/configuration/AppContext.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [com/school/library/Java/LibraryU/configuration/AppContext.class]: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception with message: org/apache/commons/beanutils/BeanIntrospector
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.4.4.jar:3.4.4]
+	at com.school.library.Java.LibraryU.LibraryUApplication.main(LibraryUApplication.java:12) [main/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.4.4.jar:3.4.4]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [com/school/library/Java/LibraryU/configuration/AppContext.class]: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception with message: org/apache/commons/beanutils/BeanIntrospector
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 13 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/school/library/Java/LibraryU/configuration/AppContext.class]: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception with message: org/apache/commons/beanutils/BeanIntrospector
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1609) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 13 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception with message: org/apache/commons/beanutils/BeanIntrospector
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1609) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/beanutils/BeanIntrospector
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.fetchBeanHelper(BasicConfigurationBuilder.java:378) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.createResultInstance(BasicConfigurationBuilder.java:364) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.createResult(BasicConfigurationBuilder.java:294) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.getConfiguration(BasicConfigurationBuilder.java:415) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at com.school.library.Java.LibraryU.common.App.<clinit>(App.java:50) ~[main/:?]
+	at com.school.library.Java.LibraryU.common.Env.<clinit>(Env.java:26) ~[main/:?]
+	at com.school.library.Java.LibraryU.configuration.AppContext.dataSource(AppContext.java:23) ~[main/:?]
+	at com.school.library.Java.LibraryU.configuration.AppContext$$SpringCGLIB$$0.CGLIB$dataSource$0(<generated>) ~[main/:?]
+	at com.school.library.Java.LibraryU.configuration.AppContext$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:370) ~[spring-context-6.2.5.jar:6.2.5]
+	at com.school.library.Java.LibraryU.configuration.AppContext$$SpringCGLIB$$0.dataSource(<generated>) ~[main/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1609) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 13 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.beanutils.BeanIntrospector
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.fetchBeanHelper(BasicConfigurationBuilder.java:378) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.createResultInstance(BasicConfigurationBuilder.java:364) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.createResult(BasicConfigurationBuilder.java:294) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.getConfiguration(BasicConfigurationBuilder.java:415) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at com.school.library.Java.LibraryU.common.App.<clinit>(App.java:50) ~[main/:?]
+	at com.school.library.Java.LibraryU.common.Env.<clinit>(Env.java:26) ~[main/:?]
+	at com.school.library.Java.LibraryU.configuration.AppContext.dataSource(AppContext.java:23) ~[main/:?]
+	at com.school.library.Java.LibraryU.configuration.AppContext$$SpringCGLIB$$0.CGLIB$dataSource$0(<generated>) ~[main/:?]
+	at com.school.library.Java.LibraryU.configuration.AppContext$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:370) ~[spring-context-6.2.5.jar:6.2.5]
+	at com.school.library.Java.LibraryU.configuration.AppContext$$SpringCGLIB$$0.dataSource(<generated>) ~[main/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1609) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 13 more
+[INFO]|2025-04-19 16:38:42,599||LibraryUApplication|logStarting|[]|Starting LibraryUApplication using Java 21.0.6 with PID 2167 (/Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU/build/classes/java/main started by ulisesmorales in /Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU)
+[DEBUG]|2025-04-19 16:38:42,601||LibraryUApplication|logStarting|[]|Running with Spring Boot v3.4.4, Spring v6.2.5
+[INFO]|2025-04-19 16:38:42,602||LibraryUApplication|logStartupProfileInfo|[]|No active profile set, falling back to 1 default profile: "default"
+[INFO]|2025-04-19 16:38:42,615||DevToolsPropertyDefaultsPostProcessor|logTo|[]|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]|2025-04-19 16:38:42,615||DevToolsPropertyDefaultsPostProcessor|logTo|[]|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]|2025-04-19 16:38:42,819||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]|2025-04-19 16:38:42,827||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+[INFO]|2025-04-19 16:38:43,015||TomcatWebServer|initialize|[]|Tomcat initialized with port 8080 (http)
+[INFO]|2025-04-19 16:38:43,022||StandardService|log|[]|Starting service [Tomcat]
+[INFO]|2025-04-19 16:38:43,022||StandardEngine|log|[]|Starting Servlet engine: [Apache Tomcat/10.1.39]
+[INFO]|2025-04-19 16:38:43,037||[/]|log|[]|Initializing Spring embedded WebApplicationContext
+[INFO]|2025-04-19 16:38:43,037||ServletWebServerApplicationContext|prepareWebApplicationContext|[]|Root WebApplicationContext: initialization completed in 421 ms
+[INFO]|2025-04-19 16:38:43,088||FluentPropertyBeanIntrospector|introspect|[]|Error when creating PropertyDescriptor for public final void org.apache.commons.configuration2.AbstractConfiguration.setProperty(java.lang.String,java.lang.Object)! Ignoring this property.
+[INFO]|2025-04-19 16:38:43,123||LogHelper|logPersistenceUnitInformation|[]|HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO]|2025-04-19 16:38:43,145||Version|logVersion|[]|HHH000412: Hibernate ORM core version 6.6.11.Final
+[INFO]|2025-04-19 16:38:43,157||RegionFactoryInitiator|initiateService|[]|HHH000026: Second-level cache disabled
+[INFO]|2025-04-19 16:38:43,261||SpringPersistenceUnitInfo|addTransformer|[]|No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO]|2025-04-19 16:38:43,275||HikariDataSource|getConnection|[]|HikariPool-1 - Starting...
+[INFO]|2025-04-19 16:38:43,412||HikariPool|checkFailFast|[]|HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@237d6654
+[INFO]|2025-04-19 16:38:43,412||HikariDataSource|getConnection|[]|HikariPool-1 - Start completed.
+[WARN]|2025-04-19 16:38:43,433||deprecation|constructDialect|[]|HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[WARN]|2025-04-19 16:38:43,433||deprecation|logSelectedDialect|[]|HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]|2025-04-19 16:38:43,439||pooling|initiateService|[]|HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO]|2025-04-19 16:38:43,548||JtaPlatformInitiator|initiateService|[]|HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO]|2025-04-19 16:38:43,550||LocalContainerEntityManagerFactoryBean|buildNativeEntityManagerFactory|[]|Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]|2025-04-19 16:38:43,581||JpaBaseConfiguration$JpaWebConfiguration|openEntityManagerInViewInterceptor|[]|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]|2025-04-19 16:38:43,726||OptionalLiveReloadServer|startServer|[]|LiveReload server is running on port 35729
+[INFO]|2025-04-19 16:38:43,736||TomcatWebServer|start|[]|Tomcat started on port 8080 (http) with context path '/'
+[INFO]|2025-04-19 16:38:43,740||LibraryUApplication|logStarted|[]|Started LibraryUApplication in 1.293 seconds (process running for 1.531)
+[INFO]|2025-04-19 16:45:34,433||GracefulShutdown|shutDownGracefully|[]|Commencing graceful shutdown. Waiting for active requests to complete
+[INFO]|2025-04-19 16:45:34,442||GracefulShutdown|doShutdown|[]|Graceful shutdown complete
+[INFO]|2025-04-19 16:45:34,447||LocalContainerEntityManagerFactoryBean|destroy|[]|Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]|2025-04-19 16:45:34,448||HikariDataSource|close|[]|HikariPool-1 - Shutdown initiated...
+[INFO]|2025-04-19 16:45:34,454||HikariDataSource|close|[]|HikariPool-1 - Shutdown completed.
+[INFO]|2025-04-19 16:45:38,659||LibraryUApplication|logStarting|[]|Starting LibraryUApplication using Java 21.0.6 with PID 2247 (/Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU/build/classes/java/main started by ulisesmorales in /Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU)
+[DEBUG]|2025-04-19 16:45:38,662||LibraryUApplication|logStarting|[]|Running with Spring Boot v3.4.4, Spring v6.2.5
+[INFO]|2025-04-19 16:45:38,662||LibraryUApplication|logStartupProfileInfo|[]|No active profile set, falling back to 1 default profile: "default"
+[INFO]|2025-04-19 16:45:38,675||DevToolsPropertyDefaultsPostProcessor|logTo|[]|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]|2025-04-19 16:45:38,676||DevToolsPropertyDefaultsPostProcessor|logTo|[]|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]|2025-04-19 16:45:38,872||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]|2025-04-19 16:45:38,880||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+[INFO]|2025-04-19 16:45:39,072||TomcatWebServer|initialize|[]|Tomcat initialized with port 8080 (http)
+[INFO]|2025-04-19 16:45:39,079||StandardService|log|[]|Starting service [Tomcat]
+[INFO]|2025-04-19 16:45:39,080||StandardEngine|log|[]|Starting Servlet engine: [Apache Tomcat/10.1.39]
+[INFO]|2025-04-19 16:45:39,094||[/]|log|[]|Initializing Spring embedded WebApplicationContext
+[INFO]|2025-04-19 16:45:39,095||ServletWebServerApplicationContext|prepareWebApplicationContext|[]|Root WebApplicationContext: initialization completed in 418 ms
+[WARN]|2025-04-19 16:45:39,129||AnnotationConfigServletWebServerApplicationContext|refresh|[]|Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [com/school/library/Java/LibraryU/configuration/AppContext.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [com/school/library/Java/LibraryU/configuration/AppContext.class]: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception with message: org/apache/commons/beanutils/BeanIntrospector
+[INFO]|2025-04-19 16:45:39,130||StandardService|log|[]|Stopping service [Tomcat]
+[INFO]|2025-04-19 16:45:39,139||ConditionEvaluationReportLogger|logMessage|[]|
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR]|2025-04-19 16:45:39,145||SpringApplication|reportFailure|[]|Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [com/school/library/Java/LibraryU/configuration/AppContext.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [com/school/library/Java/LibraryU/configuration/AppContext.class]: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception with message: org/apache/commons/beanutils/BeanIntrospector
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.4.4.jar:3.4.4]
+	at com.school.library.Java.LibraryU.LibraryUApplication.main(LibraryUApplication.java:12) [main/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.4.4.jar:3.4.4]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [com/school/library/Java/LibraryU/configuration/AppContext.class]: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception with message: org/apache/commons/beanutils/BeanIntrospector
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 13 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/school/library/Java/LibraryU/configuration/AppContext.class]: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception with message: org/apache/commons/beanutils/BeanIntrospector
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1609) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 13 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception with message: org/apache/commons/beanutils/BeanIntrospector
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1609) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/beanutils/BeanIntrospector
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.fetchBeanHelper(BasicConfigurationBuilder.java:378) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.createResultInstance(BasicConfigurationBuilder.java:364) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.createResult(BasicConfigurationBuilder.java:294) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.getConfiguration(BasicConfigurationBuilder.java:415) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at com.school.library.Java.LibraryU.common.App.<clinit>(App.java:50) ~[main/:?]
+	at com.school.library.Java.LibraryU.common.Env.<clinit>(Env.java:26) ~[main/:?]
+	at com.school.library.Java.LibraryU.configuration.AppContext.dataSource(AppContext.java:23) ~[main/:?]
+	at com.school.library.Java.LibraryU.configuration.AppContext$$SpringCGLIB$$0.CGLIB$dataSource$0(<generated>) ~[main/:?]
+	at com.school.library.Java.LibraryU.configuration.AppContext$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:370) ~[spring-context-6.2.5.jar:6.2.5]
+	at com.school.library.Java.LibraryU.configuration.AppContext$$SpringCGLIB$$0.dataSource(<generated>) ~[main/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1609) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 13 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.beanutils.BeanIntrospector
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.fetchBeanHelper(BasicConfigurationBuilder.java:378) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.createResultInstance(BasicConfigurationBuilder.java:364) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.createResult(BasicConfigurationBuilder.java:294) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at org.apache.commons.configuration2.builder.BasicConfigurationBuilder.getConfiguration(BasicConfigurationBuilder.java:415) ~[commons-configuration2-2.11.0.jar:2.11.0]
+	at com.school.library.Java.LibraryU.common.App.<clinit>(App.java:50) ~[main/:?]
+	at com.school.library.Java.LibraryU.common.Env.<clinit>(Env.java:26) ~[main/:?]
+	at com.school.library.Java.LibraryU.configuration.AppContext.dataSource(AppContext.java:23) ~[main/:?]
+	at com.school.library.Java.LibraryU.configuration.AppContext$$SpringCGLIB$$0.CGLIB$dataSource$0(<generated>) ~[main/:?]
+	at com.school.library.Java.LibraryU.configuration.AppContext$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:370) ~[spring-context-6.2.5.jar:6.2.5]
+	at com.school.library.Java.LibraryU.configuration.AppContext$$SpringCGLIB$$0.dataSource(<generated>) ~[main/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1609) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 13 more
+[INFO]|2025-04-19 16:51:04,928||LibraryUApplication|logStarting|[]|Starting LibraryUApplication using Java 21.0.6 with PID 2296 (/Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU/build/classes/java/main started by ulisesmorales in /Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU)
+[DEBUG]|2025-04-19 16:51:04,931||LibraryUApplication|logStarting|[]|Running with Spring Boot v3.4.4, Spring v6.2.5
+[INFO]|2025-04-19 16:51:04,932||LibraryUApplication|logStartupProfileInfo|[]|No active profile set, falling back to 1 default profile: "default"
+[INFO]|2025-04-19 16:51:04,948||DevToolsPropertyDefaultsPostProcessor|logTo|[]|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]|2025-04-19 16:51:04,948||DevToolsPropertyDefaultsPostProcessor|logTo|[]|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]|2025-04-19 16:51:05,169||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]|2025-04-19 16:51:05,177||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+[INFO]|2025-04-19 16:51:05,371||TomcatWebServer|initialize|[]|Tomcat initialized with port 8080 (http)
+[INFO]|2025-04-19 16:51:05,377||StandardService|log|[]|Starting service [Tomcat]
+[INFO]|2025-04-19 16:51:05,378||StandardEngine|log|[]|Starting Servlet engine: [Apache Tomcat/10.1.39]
+[INFO]|2025-04-19 16:51:05,393||[/]|log|[]|Initializing Spring embedded WebApplicationContext
+[INFO]|2025-04-19 16:51:05,394||ServletWebServerApplicationContext|prepareWebApplicationContext|[]|Root WebApplicationContext: initialization completed in 445 ms
+[INFO]|2025-04-19 16:51:05,451||FluentPropertyBeanIntrospector|introspect|[]|Error when creating PropertyDescriptor for public final void org.apache.commons.configuration2.AbstractConfiguration.setProperty(java.lang.String,java.lang.Object)! Ignoring this property.
+[INFO]|2025-04-19 16:51:05,490||LogHelper|logPersistenceUnitInformation|[]|HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO]|2025-04-19 16:51:05,513||Version|logVersion|[]|HHH000412: Hibernate ORM core version 6.6.11.Final
+[INFO]|2025-04-19 16:51:05,526||RegionFactoryInitiator|initiateService|[]|HHH000026: Second-level cache disabled
+[INFO]|2025-04-19 16:51:05,636||SpringPersistenceUnitInfo|addTransformer|[]|No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO]|2025-04-19 16:51:05,650||HikariDataSource|getConnection|[]|HikariPool-1 - Starting...
+[INFO]|2025-04-19 16:51:05,788||HikariPool|checkFailFast|[]|HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54320695
+[INFO]|2025-04-19 16:51:05,789||HikariDataSource|getConnection|[]|HikariPool-1 - Start completed.
+[WARN]|2025-04-19 16:51:05,806||deprecation|constructDialect|[]|HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[WARN]|2025-04-19 16:51:05,806||deprecation|logSelectedDialect|[]|HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]|2025-04-19 16:51:05,812||pooling|initiateService|[]|HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO]|2025-04-19 16:51:05,924||JtaPlatformInitiator|initiateService|[]|HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO]|2025-04-19 16:51:05,925||LocalContainerEntityManagerFactoryBean|buildNativeEntityManagerFactory|[]|Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]|2025-04-19 16:51:05,957||JpaBaseConfiguration$JpaWebConfiguration|openEntityManagerInViewInterceptor|[]|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]|2025-04-19 16:51:06,103||OptionalLiveReloadServer|startServer|[]|LiveReload server is running on port 35729
+[INFO]|2025-04-19 16:51:06,112||TomcatWebServer|start|[]|Tomcat started on port 8080 (http) with context path '/'
+[INFO]|2025-04-19 16:51:06,116||LibraryUApplication|logStarted|[]|Started LibraryUApplication in 1.345 seconds (process running for 1.602)
+[INFO]|2025-04-19 16:51:07,493||GracefulShutdown|shutDownGracefully|[]|Commencing graceful shutdown. Waiting for active requests to complete
+[INFO]|2025-04-19 16:51:07,500||GracefulShutdown|doShutdown|[]|Graceful shutdown complete
+[INFO]|2025-04-19 16:51:07,505||LocalContainerEntityManagerFactoryBean|destroy|[]|Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]|2025-04-19 16:51:07,507||HikariDataSource|close|[]|HikariPool-1 - Shutdown initiated...
+[INFO]|2025-04-19 16:51:07,513||HikariDataSource|close|[]|HikariPool-1 - Shutdown completed.
+[INFO]|2025-04-19 16:51:11,171||LibraryUApplication|logStarting|[]|Starting LibraryUApplication using Java 21.0.6 with PID 2309 (/Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU/build/classes/java/main started by ulisesmorales in /Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU)
+[DEBUG]|2025-04-19 16:51:11,173||LibraryUApplication|logStarting|[]|Running with Spring Boot v3.4.4, Spring v6.2.5
+[INFO]|2025-04-19 16:51:11,173||LibraryUApplication|logStartupProfileInfo|[]|No active profile set, falling back to 1 default profile: "default"
+[INFO]|2025-04-19 16:51:11,186||DevToolsPropertyDefaultsPostProcessor|logTo|[]|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]|2025-04-19 16:51:11,186||DevToolsPropertyDefaultsPostProcessor|logTo|[]|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]|2025-04-19 16:51:11,368||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]|2025-04-19 16:51:11,375||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+[INFO]|2025-04-19 16:51:11,553||TomcatWebServer|initialize|[]|Tomcat initialized with port 8080 (http)
+[INFO]|2025-04-19 16:51:11,559||StandardService|log|[]|Starting service [Tomcat]
+[INFO]|2025-04-19 16:51:11,559||StandardEngine|log|[]|Starting Servlet engine: [Apache Tomcat/10.1.39]
+[INFO]|2025-04-19 16:51:11,572||[/]|log|[]|Initializing Spring embedded WebApplicationContext
+[INFO]|2025-04-19 16:51:11,572||ServletWebServerApplicationContext|prepareWebApplicationContext|[]|Root WebApplicationContext: initialization completed in 386 ms
+[INFO]|2025-04-19 16:51:11,617||FluentPropertyBeanIntrospector|introspect|[]|Error when creating PropertyDescriptor for public final void org.apache.commons.configuration2.AbstractConfiguration.setProperty(java.lang.String,java.lang.Object)! Ignoring this property.
+[INFO]|2025-04-19 16:51:11,649||LogHelper|logPersistenceUnitInformation|[]|HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO]|2025-04-19 16:51:11,666||Version|logVersion|[]|HHH000412: Hibernate ORM core version 6.6.11.Final
+[INFO]|2025-04-19 16:51:11,677||RegionFactoryInitiator|initiateService|[]|HHH000026: Second-level cache disabled
+[INFO]|2025-04-19 16:51:11,769||SpringPersistenceUnitInfo|addTransformer|[]|No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO]|2025-04-19 16:51:11,778||HikariDataSource|getConnection|[]|HikariPool-1 - Starting...
+[INFO]|2025-04-19 16:51:11,915||HikariPool|checkFailFast|[]|HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25f5d493
+[INFO]|2025-04-19 16:51:11,916||HikariDataSource|getConnection|[]|HikariPool-1 - Start completed.
+[WARN]|2025-04-19 16:51:11,932||deprecation|constructDialect|[]|HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[WARN]|2025-04-19 16:51:11,933||deprecation|logSelectedDialect|[]|HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]|2025-04-19 16:51:11,939||pooling|initiateService|[]|HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO]|2025-04-19 16:51:12,052||JtaPlatformInitiator|initiateService|[]|HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO]|2025-04-19 16:51:12,053||LocalContainerEntityManagerFactoryBean|buildNativeEntityManagerFactory|[]|Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]|2025-04-19 16:51:12,083||JpaBaseConfiguration$JpaWebConfiguration|openEntityManagerInViewInterceptor|[]|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]|2025-04-19 16:51:12,215||OptionalLiveReloadServer|startServer|[]|LiveReload server is running on port 35729
+[INFO]|2025-04-19 16:51:12,224||TomcatWebServer|start|[]|Tomcat started on port 8080 (http) with context path '/'
+[INFO]|2025-04-19 16:51:12,227||LibraryUApplication|logStarted|[]|Started LibraryUApplication in 1.203 seconds (process running for 1.448)
+[INFO]|2025-04-19 16:51:32,385||GracefulShutdown|shutDownGracefully|[]|Commencing graceful shutdown. Waiting for active requests to complete
+[INFO]|2025-04-19 16:51:32,394||GracefulShutdown|doShutdown|[]|Graceful shutdown complete
+[INFO]|2025-04-19 16:51:32,399||LocalContainerEntityManagerFactoryBean|destroy|[]|Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]|2025-04-19 16:51:32,401||HikariDataSource|close|[]|HikariPool-1 - Shutdown initiated...
+[INFO]|2025-04-19 16:51:32,407||HikariDataSource|close|[]|HikariPool-1 - Shutdown completed.
+[INFO]|2025-04-20 07:20:58,431||LibraryUApplication|logStarting|[]|Starting LibraryUApplication using Java 21.0.6 with PID 1183 (/Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU/build/classes/java/main started by ulisesmorales in /Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU)
+[DEBUG]|2025-04-20 07:20:58,434||LibraryUApplication|logStarting|[]|Running with Spring Boot v3.4.4, Spring v6.2.5
+[INFO]|2025-04-20 07:20:58,434||LibraryUApplication|logStartupProfileInfo|[]|No active profile set, falling back to 1 default profile: "default"
+[INFO]|2025-04-20 07:20:58,448||DevToolsPropertyDefaultsPostProcessor|logTo|[]|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]|2025-04-20 07:20:58,448||DevToolsPropertyDefaultsPostProcessor|logTo|[]|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]|2025-04-20 07:20:58,658||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]|2025-04-20 07:20:58,667||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+[INFO]|2025-04-20 07:20:58,853||TomcatWebServer|initialize|[]|Tomcat initialized with port 8080 (http)
+[INFO]|2025-04-20 07:20:58,859||StandardService|log|[]|Starting service [Tomcat]
+[INFO]|2025-04-20 07:20:58,859||StandardEngine|log|[]|Starting Servlet engine: [Apache Tomcat/10.1.39]
+[INFO]|2025-04-20 07:20:58,873||[/]|log|[]|Initializing Spring embedded WebApplicationContext
+[INFO]|2025-04-20 07:20:58,874||ServletWebServerApplicationContext|prepareWebApplicationContext|[]|Root WebApplicationContext: initialization completed in 424 ms
+[INFO]|2025-04-20 07:20:58,923||FluentPropertyBeanIntrospector|introspect|[]|Error when creating PropertyDescriptor for public final void org.apache.commons.configuration2.AbstractConfiguration.setProperty(java.lang.String,java.lang.Object)! Ignoring this property.
+[INFO]|2025-04-20 07:20:58,958||LogHelper|logPersistenceUnitInformation|[]|HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO]|2025-04-20 07:20:58,983||Version|logVersion|[]|HHH000412: Hibernate ORM core version 6.6.11.Final
+[INFO]|2025-04-20 07:20:58,995||RegionFactoryInitiator|initiateService|[]|HHH000026: Second-level cache disabled
+[INFO]|2025-04-20 07:20:59,099||SpringPersistenceUnitInfo|addTransformer|[]|No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO]|2025-04-20 07:20:59,112||HikariDataSource|getConnection|[]|HikariPool-1 - Starting...
+[WARN]|2025-04-20 07:21:00,160||SqlExceptionHelper|logExceptions|[]|SQL Error: 0, SQLState: 08S01
+[ERROR]|2025-04-20 07:21:00,161||SqlExceptionHelper|logExceptions|[]|Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[WARN]|2025-04-20 07:21:00,162||JdbcEnvironmentInitiator|getJdbcEnvironmentUsingJdbcMetadata|[]|HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) [spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) [spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) [spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) [spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) [spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.4.4.jar:3.4.4]
+	at com.school.library.Java.LibraryU.LibraryUApplication.main(LibraryUApplication.java:12) [main/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.4.4.jar:3.4.4]
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	... 38 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:961) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:961) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	... 38 more
+[WARN]|2025-04-20 07:21:00,187||deprecation|constructDialect|[]|HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[WARN]|2025-04-20 07:21:00,188||deprecation|logSelectedDialect|[]|HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]|2025-04-20 07:21:00,194||pooling|initiateService|[]|HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO]|2025-04-20 07:21:00,323||JtaPlatformInitiator|initiateService|[]|HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO]|2025-04-20 07:21:00,325||LocalContainerEntityManagerFactoryBean|buildNativeEntityManagerFactory|[]|Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]|2025-04-20 07:21:00,356||JpaBaseConfiguration$JpaWebConfiguration|openEntityManagerInViewInterceptor|[]|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]|2025-04-20 07:21:00,489||OptionalLiveReloadServer|startServer|[]|LiveReload server is running on port 35729
+[INFO]|2025-04-20 07:21:00,500||TomcatWebServer|start|[]|Tomcat started on port 8080 (http) with context path '/'
+[INFO]|2025-04-20 07:21:00,505||LibraryUApplication|logStarted|[]|Started LibraryUApplication in 2.238 seconds (process running for 2.488)
+[INFO]|2025-04-20 07:22:00,782||GracefulShutdown|shutDownGracefully|[]|Commencing graceful shutdown. Waiting for active requests to complete
+[INFO]|2025-04-20 07:22:00,790||GracefulShutdown|doShutdown|[]|Graceful shutdown complete
+[INFO]|2025-04-20 07:22:00,795||LocalContainerEntityManagerFactoryBean|destroy|[]|Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]|2025-04-21 14:19:43,740||LibraryUApplication|logStarting|[]|Starting LibraryUApplication using Java 21.0.6 with PID 2375 (/Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU/build/classes/java/main started by ulisesmorales in /Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU)
+[DEBUG]|2025-04-21 14:19:43,743||LibraryUApplication|logStarting|[]|Running with Spring Boot v3.4.4, Spring v6.2.5
+[INFO]|2025-04-21 14:19:43,743||LibraryUApplication|logStartupProfileInfo|[]|No active profile set, falling back to 1 default profile: "default"
+[INFO]|2025-04-21 14:19:43,757||DevToolsPropertyDefaultsPostProcessor|logTo|[]|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]|2025-04-21 14:19:43,757||DevToolsPropertyDefaultsPostProcessor|logTo|[]|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]|2025-04-21 14:19:43,970||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]|2025-04-21 14:19:43,979||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+[INFO]|2025-04-21 14:19:44,167||TomcatWebServer|initialize|[]|Tomcat initialized with port 8080 (http)
+[INFO]|2025-04-21 14:19:44,174||StandardService|log|[]|Starting service [Tomcat]
+[INFO]|2025-04-21 14:19:44,174||StandardEngine|log|[]|Starting Servlet engine: [Apache Tomcat/10.1.39]
+[INFO]|2025-04-21 14:19:44,188||[/]|log|[]|Initializing Spring embedded WebApplicationContext
+[INFO]|2025-04-21 14:19:44,189||ServletWebServerApplicationContext|prepareWebApplicationContext|[]|Root WebApplicationContext: initialization completed in 431 ms
+[INFO]|2025-04-21 14:19:44,238||FluentPropertyBeanIntrospector|introspect|[]|Error when creating PropertyDescriptor for public final void org.apache.commons.configuration2.AbstractConfiguration.setProperty(java.lang.String,java.lang.Object)! Ignoring this property.
+[INFO]|2025-04-21 14:19:44,276||LogHelper|logPersistenceUnitInformation|[]|HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO]|2025-04-21 14:19:44,298||Version|logVersion|[]|HHH000412: Hibernate ORM core version 6.6.11.Final
+[INFO]|2025-04-21 14:19:44,310||RegionFactoryInitiator|initiateService|[]|HHH000026: Second-level cache disabled
+[INFO]|2025-04-21 14:19:44,415||SpringPersistenceUnitInfo|addTransformer|[]|No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO]|2025-04-21 14:19:44,429||HikariDataSource|getConnection|[]|HikariPool-1 - Starting...
+[INFO]|2025-04-21 14:19:44,577||HikariPool|checkFailFast|[]|HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@547b5c40
+[INFO]|2025-04-21 14:19:44,578||HikariDataSource|getConnection|[]|HikariPool-1 - Start completed.
+[WARN]|2025-04-21 14:19:44,603||deprecation|constructDialect|[]|HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[WARN]|2025-04-21 14:19:44,604||deprecation|logSelectedDialect|[]|HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]|2025-04-21 14:19:44,610||pooling|initiateService|[]|HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO]|2025-04-21 14:19:44,931||JtaPlatformInitiator|initiateService|[]|HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO]|2025-04-21 14:19:45,262||LocalContainerEntityManagerFactoryBean|buildNativeEntityManagerFactory|[]|Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]|2025-04-21 14:19:45,294||JpaBaseConfiguration$JpaWebConfiguration|openEntityManagerInViewInterceptor|[]|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]|2025-04-21 14:19:45,425||OptionalLiveReloadServer|startServer|[]|LiveReload server is running on port 35729
+[INFO]|2025-04-21 14:19:45,434||TomcatWebServer|start|[]|Tomcat started on port 8080 (http) with context path '/'
+[INFO]|2025-04-21 14:19:45,438||LibraryUApplication|logStarted|[]|Started LibraryUApplication in 1.861 seconds (process running for 2.112)
+[INFO]|2025-04-21 14:35:15,335||GracefulShutdown|shutDownGracefully|[]|Commencing graceful shutdown. Waiting for active requests to complete
+[INFO]|2025-04-21 14:35:15,344||GracefulShutdown|doShutdown|[]|Graceful shutdown complete
+[INFO]|2025-04-21 14:35:15,350||LocalContainerEntityManagerFactoryBean|destroy|[]|Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]|2025-04-21 14:35:15,353||HikariDataSource|close|[]|HikariPool-1 - Shutdown initiated...
+[INFO]|2025-04-21 14:35:15,359||HikariDataSource|close|[]|HikariPool-1 - Shutdown completed.

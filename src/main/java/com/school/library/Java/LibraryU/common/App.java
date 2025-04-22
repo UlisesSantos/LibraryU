@@ -14,20 +14,21 @@ import java.util.concurrent.TimeUnit;
  * */
 public final class App {
 
-    //File Properties Name
+    // application.properties file name
     private static final String APPLICATION_PROPERTIES = "application.properties";
 
-    // Application Name Key
+    // Application name key
     private static final String APPLICATION_NAME_KEY = "spring.application.name";
 
-    // Private Keys from Environment Variables
+    // Instance name key
     private static final String INSTANCE_NAME_KEY = "INSTANCE_NAME";
+    // Logs path key
     private static final String LOGS_PATH_KEY = "LOGS_PATH";
-    public static final String PROPERTIES_PATH_KEY = "PROPERTIES_PATH";
+    // application-name.properties path key
+    private static final String PROPERTIES_PATH_KEY = "PROPERTIES_PATH";
 
+    // Object to get application.properties values
     private static PropertiesConfiguration configuration;
-
-    //Object to Get Environment Variables
     static {
         try{
             Parameters params = new Parameters();
@@ -54,7 +55,7 @@ public final class App {
     }
 
     /**
-     * Function to get a property by a key
+     * Function to get a property by key
      * @param key Key of the property
      * @return property
      * */
@@ -62,14 +63,12 @@ public final class App {
         return configuration.getString(key);
     }
 
-    //Application Name
+    // Application name value
     public static final String APPLICATION_NAME = getProperty(APPLICATION_NAME_KEY);
-    //Logs Path
+    // Logs path value
     public static final String LOGS_PATH = System.getProperty(LOGS_PATH_KEY);
-    //Instance Name
+    // Instance name value
     public static final String INSTANCE_NAME = System.getProperty(INSTANCE_NAME_KEY);
-
+    // Properties path value
     public static final String PROPERTIES_PATH = System.getProperty(PROPERTIES_PATH_KEY);
-
-
 }

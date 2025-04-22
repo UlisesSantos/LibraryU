@@ -5,10 +5,10 @@ package com.school.library.Java.LibraryU.common;
  * */
 public class AppException extends RuntimeException{
 
-    //Serial version UID
+    // Serial version UID
     private static final long serialVersionUID = 1L;
 
-    //Error code
+    // Error code
     private final int errorCode;
 
     // HTTP code

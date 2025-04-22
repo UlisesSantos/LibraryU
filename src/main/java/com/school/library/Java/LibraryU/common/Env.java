@@ -14,10 +14,8 @@ import java.util.concurrent.TimeUnit;
  * */
 public final class Env {
 
-
+    //Object to Get application-name.properties values
     private static PropertiesConfiguration configuration;
-
-    //Object to Get Environment Variables
     static {
         try{
             Parameters params = new Parameters();
@@ -44,13 +42,13 @@ public final class Env {
     }
 
     /**
-     * Method to get a property
+     * Method to get a property by key
      * @param key Key of the property
      * */
     public static String getProperty(String key) {return configuration.getString(key);}
 
     /**
-     * Method to get a property by prefix
+     * Method to get a property by prefix and key
      * @param key key of the property
      * @param prefix prefix of the property
      * */

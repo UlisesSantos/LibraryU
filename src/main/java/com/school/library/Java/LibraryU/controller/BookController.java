@@ -3,13 +3,11 @@ package com.school.library.Java.LibraryU.controller;
 import com.school.library.Java.LibraryU.common.LogConfig;
 import com.school.library.Java.LibraryU.model.Books;
 import com.school.library.Java.LibraryU.service.BookService;
-import org.hibernate.boot.model.internal.CreateKeySecondPass;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Repository;
 import org.springframework.transaction.CannotCreateTransactionException;
 import org.springframework.web.bind.annotation.*;
 

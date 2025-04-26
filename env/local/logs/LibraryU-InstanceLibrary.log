@@ -5552,3 +5552,215 @@ This generated password is for development use only. Your security configuration
 [INFO]|2025-04-26 13:04:45,074||LocalContainerEntityManagerFactoryBean|destroy|[]|Closing JPA EntityManagerFactory for persistence unit 'default'
 [INFO]|2025-04-26 13:04:45,077||HikariDataSource|close|[]|HikariPool-1 - Shutdown initiated...
 [INFO]|2025-04-26 13:04:45,083||HikariDataSource|close|[]|HikariPool-1 - Shutdown completed.
+[INFO]|2025-04-26 13:29:16,382||LibraryUApplication|logStarting|[]|Starting LibraryUApplication using Java 21.0.6 with PID 4391 (/Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU/build/classes/java/main started by ulisesmorales in /Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU)
+[DEBUG]|2025-04-26 13:29:16,384||LibraryUApplication|logStarting|[]|Running with Spring Boot v3.4.4, Spring v6.2.5
+[INFO]|2025-04-26 13:29:16,385||LibraryUApplication|logStartupProfileInfo|[]|No active profile set, falling back to 1 default profile: "default"
+[INFO]|2025-04-26 13:29:16,399||DevToolsPropertyDefaultsPostProcessor|logTo|[]|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]|2025-04-26 13:29:16,399||DevToolsPropertyDefaultsPostProcessor|logTo|[]|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]|2025-04-26 13:29:16,640||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]|2025-04-26 13:29:16,661||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Finished Spring Data repository scanning in 18 ms. Found 4 JPA repository interfaces.
+[INFO]|2025-04-26 13:29:16,865||TomcatWebServer|initialize|[]|Tomcat initialized with port 8080 (http)
+[INFO]|2025-04-26 13:29:16,871||StandardService|log|[]|Starting service [Tomcat]
+[INFO]|2025-04-26 13:29:16,871||StandardEngine|log|[]|Starting Servlet engine: [Apache Tomcat/10.1.39]
+[INFO]|2025-04-26 13:29:16,885||[/]|log|[]|Initializing Spring embedded WebApplicationContext
+[INFO]|2025-04-26 13:29:16,886||ServletWebServerApplicationContext|prepareWebApplicationContext|[]|Root WebApplicationContext: initialization completed in 486 ms
+[INFO]|2025-04-26 13:29:16,952||FluentPropertyBeanIntrospector|introspect|[]|Error when creating PropertyDescriptor for public final void org.apache.commons.configuration2.AbstractConfiguration.setProperty(java.lang.String,java.lang.Object)! Ignoring this property.
+[INFO]|2025-04-26 13:29:16,984||LogHelper|logPersistenceUnitInformation|[]|HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO]|2025-04-26 13:29:17,003||Version|logVersion|[]|HHH000412: Hibernate ORM core version 6.6.11.Final
+[INFO]|2025-04-26 13:29:17,014||RegionFactoryInitiator|initiateService|[]|HHH000026: Second-level cache disabled
+[INFO]|2025-04-26 13:29:17,122||SpringPersistenceUnitInfo|addTransformer|[]|No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO]|2025-04-26 13:29:17,132||HikariDataSource|getConnection|[]|HikariPool-1 - Starting...
+[INFO]|2025-04-26 13:29:17,268||HikariPool|checkFailFast|[]|HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a4fdba5
+[INFO]|2025-04-26 13:29:17,269||HikariDataSource|getConnection|[]|HikariPool-1 - Start completed.
+[WARN]|2025-04-26 13:29:17,288||deprecation|constructDialect|[]|HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[WARN]|2025-04-26 13:29:17,288||deprecation|logSelectedDialect|[]|HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]|2025-04-26 13:29:17,294||pooling|initiateService|[]|HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO]|2025-04-26 13:29:17,627||JtaPlatformInitiator|initiateService|[]|HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO]|2025-04-26 13:29:17,667||LocalContainerEntityManagerFactoryBean|buildNativeEntityManagerFactory|[]|Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]|2025-04-26 13:29:17,796||JpaBaseConfiguration$JpaWebConfiguration|openEntityManagerInViewInterceptor|[]|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]|2025-04-26 13:29:17,805||InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer|configure|[]|Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+[WARN]|2025-04-26 13:29:17,805||InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer|configure|[]|Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+[INFO]|2025-04-26 13:29:17,962||OptionalLiveReloadServer|startServer|[]|LiveReload server is running on port 35729
+[INFO]|2025-04-26 13:29:17,972||TomcatWebServer|start|[]|Tomcat started on port 8080 (http) with context path '/'
+[INFO]|2025-04-26 13:29:17,976||LibraryUApplication|logStarted|[]|Started LibraryUApplication in 1.751 seconds (process running for 2.008)
+[INFO]|2025-04-26 13:29:21,765||[/]|log|[]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]|2025-04-26 13:29:21,765||DispatcherServlet|initServletBean|[]|Initializing Servlet 'dispatcherServlet'
+[INFO]|2025-04-26 13:29:21,766||DispatcherServlet|initServletBean|[]|Completed initialization in 1 ms
+[INFO]|2025-04-26 13:29:38,546|LibraryU|MyUserDetailsService|loadUserByUsername|[e63d6d7e-ed64-442f-bf11-85865f40031d]|Login user from database
+[WARN]|2025-04-26 13:29:38,546|LibraryU|BCryptPasswordEncoder|matches|[e63d6d7e-ed64-442f-bf11-85865f40031d]|Encoded password does not look like BCrypt
+[INFO]|2025-04-26 13:30:38,532|LibraryU|MyUserDetailsService|loadUserByUsername|[3218480b-f5bf-4de1-a35d-0526b7fa01f8]|Login user from database
+[WARN]|2025-04-26 13:30:38,533|LibraryU|BCryptPasswordEncoder|matches|[3218480b-f5bf-4de1-a35d-0526b7fa01f8]|Encoded password does not look like BCrypt
+[INFO]|2025-04-26 13:30:52,004|LibraryU|MyUserDetailsService|loadUserByUsername|[568ff279-765a-49e0-98ba-41fbb8444e97]|Login user from database
+[WARN]|2025-04-26 13:30:52,004|LibraryU|BCryptPasswordEncoder|matches|[568ff279-765a-49e0-98ba-41fbb8444e97]|Encoded password does not look like BCrypt
+[INFO]|2025-04-26 13:31:33,354|LibraryU|MyUserDetailsService|loadUserByUsername|[66de9d13-da55-457b-818f-4a7ff1b32ec5]|Login user from database
+[INFO]|2025-04-26 13:31:33,662|LibraryU|UserController|saveUser|[13ecd5dd-0889-4dac-974b-3518625e83f9]|Registering user in the database
+[WARN]|2025-04-26 13:31:34,143|LibraryU|SqlExceptionHelper|logExceptions|[13ecd5dd-0889-4dac-974b-3518625e83f9]|SQL Error: 1062, SQLState: 23000
+[ERROR]|2025-04-26 13:31:34,143|LibraryU|SqlExceptionHelper|logExceptions|[13ecd5dd-0889-4dac-974b-3518625e83f9]|Duplicate entry '1' for key 'users.PRIMARY'
+[INFO]|2025-04-26 13:31:34,147|LibraryU|UserController|saveUser|[13ecd5dd-0889-4dac-974b-3518625e83f9]|org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry '1' for key 'users.PRIMARY'] [insert into users (emailUser,lastnameUser,nameUser,passwordUser,username,userId) values (?,?,?,?,?,?)]; SQL [insert into users (emailUser,lastnameUser,nameUser,passwordUser,username,userId) values (?,?,?,?,?,?)]; constraint [users.PRIMARY]
+[INFO]|2025-04-26 13:34:30,954||GracefulShutdown|shutDownGracefully|[]|Commencing graceful shutdown. Waiting for active requests to complete
+[INFO]|2025-04-26 13:34:30,958||GracefulShutdown|doShutdown|[]|Graceful shutdown complete
+[INFO]|2025-04-26 13:34:30,964||LocalContainerEntityManagerFactoryBean|destroy|[]|Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]|2025-04-26 13:34:30,966||HikariDataSource|close|[]|HikariPool-1 - Shutdown initiated...
+[INFO]|2025-04-26 13:34:30,971||HikariDataSource|close|[]|HikariPool-1 - Shutdown completed.
+[INFO]|2025-04-26 13:34:32,220||LibraryUApplication|logStarting|[]|Starting LibraryUApplication using Java 21.0.6 with PID 4426 (/Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU/build/classes/java/main started by ulisesmorales in /Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU)
+[DEBUG]|2025-04-26 13:34:32,222||LibraryUApplication|logStarting|[]|Running with Spring Boot v3.4.4, Spring v6.2.5
+[INFO]|2025-04-26 13:34:32,223||LibraryUApplication|logStartupProfileInfo|[]|No active profile set, falling back to 1 default profile: "default"
+[INFO]|2025-04-26 13:34:32,238||DevToolsPropertyDefaultsPostProcessor|logTo|[]|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]|2025-04-26 13:34:32,238||DevToolsPropertyDefaultsPostProcessor|logTo|[]|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]|2025-04-26 13:34:32,463||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]|2025-04-26 13:34:32,485||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Finished Spring Data repository scanning in 18 ms. Found 4 JPA repository interfaces.
+[INFO]|2025-04-26 13:34:32,676||TomcatWebServer|initialize|[]|Tomcat initialized with port 8080 (http)
+[INFO]|2025-04-26 13:34:32,682||StandardService|log|[]|Starting service [Tomcat]
+[INFO]|2025-04-26 13:34:32,682||StandardEngine|log|[]|Starting Servlet engine: [Apache Tomcat/10.1.39]
+[INFO]|2025-04-26 13:34:32,696||[/]|log|[]|Initializing Spring embedded WebApplicationContext
+[INFO]|2025-04-26 13:34:32,696||ServletWebServerApplicationContext|prepareWebApplicationContext|[]|Root WebApplicationContext: initialization completed in 458 ms
+[INFO]|2025-04-26 13:34:32,760||FluentPropertyBeanIntrospector|introspect|[]|Error when creating PropertyDescriptor for public final void org.apache.commons.configuration2.AbstractConfiguration.setProperty(java.lang.String,java.lang.Object)! Ignoring this property.
+[INFO]|2025-04-26 13:34:32,792||LogHelper|logPersistenceUnitInformation|[]|HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO]|2025-04-26 13:34:32,810||Version|logVersion|[]|HHH000412: Hibernate ORM core version 6.6.11.Final
+[INFO]|2025-04-26 13:34:32,820||RegionFactoryInitiator|initiateService|[]|HHH000026: Second-level cache disabled
+[INFO]|2025-04-26 13:34:32,928||SpringPersistenceUnitInfo|addTransformer|[]|No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO]|2025-04-26 13:34:32,939||HikariDataSource|getConnection|[]|HikariPool-1 - Starting...
+[INFO]|2025-04-26 13:34:33,068||HikariPool|checkFailFast|[]|HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68804fb
+[INFO]|2025-04-26 13:34:33,068||HikariDataSource|getConnection|[]|HikariPool-1 - Start completed.
+[WARN]|2025-04-26 13:34:33,087||deprecation|constructDialect|[]|HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[WARN]|2025-04-26 13:34:33,088||deprecation|logSelectedDialect|[]|HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]|2025-04-26 13:34:33,093||pooling|initiateService|[]|HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO]|2025-04-26 13:34:33,408||JtaPlatformInitiator|initiateService|[]|HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO]|2025-04-26 13:34:33,446||LocalContainerEntityManagerFactoryBean|buildNativeEntityManagerFactory|[]|Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]|2025-04-26 13:34:33,577||JpaBaseConfiguration$JpaWebConfiguration|openEntityManagerInViewInterceptor|[]|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]|2025-04-26 13:34:33,586||InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer|configure|[]|Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+[WARN]|2025-04-26 13:34:33,586||InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer|configure|[]|Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+[INFO]|2025-04-26 13:34:33,740||OptionalLiveReloadServer|startServer|[]|LiveReload server is running on port 35729
+[INFO]|2025-04-26 13:34:33,753||TomcatWebServer|start|[]|Tomcat started on port 8080 (http) with context path '/'
+[INFO]|2025-04-26 13:34:33,757||LibraryUApplication|logStarted|[]|Started LibraryUApplication in 1.695 seconds (process running for 1.944)
+[INFO]|2025-04-26 13:35:15,288||[/]|log|[]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]|2025-04-26 13:35:15,288||DispatcherServlet|initServletBean|[]|Initializing Servlet 'dispatcherServlet'
+[INFO]|2025-04-26 13:35:15,289||DispatcherServlet|initServletBean|[]|Completed initialization in 1 ms
+[INFO]|2025-04-26 13:35:15,610|LibraryU|MyUserDetailsService|loadUserByUsername|[e6c24399-1909-4a0b-a6a3-c548c6bcd5d7]|Login user from database
+[INFO]|2025-04-26 13:35:15,856|LibraryU|UserController|getAllUsers|[bba12b2b-543f-47d7-ac8d-d5ccb7ebfa5e]|Getting all users from the DataBase. Headers {authorization=[Basic YWRtaW46MTIzNA==], user-agent=[PostmanRuntime/7.43.3], accept=[*/*], postman-token=[3059ea8a-59f3-47c3-afd9-bc37230bc125], host=[localhost:8080], accept-encoding=[gzip, deflate, br], connection=[keep-alive], cookie=[JSESSIONID=3858FF489F9E94A08D0061E44CE706B7]}
+[INFO]|2025-04-26 13:35:28,039|LibraryU|MyUserDetailsService|loadUserByUsername|[98b95f15-ca42-4eaa-b7b3-b3c00af6aa33]|Login user from database
+[INFO]|2025-04-26 13:35:28,326|LibraryU|UserController|saveUser|[77808b78-4151-4a93-94f5-a841e50149aa]|Registering user in the database
+[INFO]|2025-04-26 13:36:10,707|LibraryU|MyUserDetailsService|loadUserByUsername|[0cf47ebe-1c86-4def-8c52-fb61a468377e]|Login user from database
+[INFO]|2025-04-26 13:36:10,968|LibraryU|UserController|getAllUsers|[3187564c-abc2-4289-b98e-64b055dc024b]|Getting all users from the DataBase. Headers {authorization=[Basic YWRtaW46MTIzNA==], user-agent=[PostmanRuntime/7.43.3], accept=[*/*], postman-token=[c7ee7a99-7706-4a56-974d-4b8eff4c66f5], host=[localhost:8080], accept-encoding=[gzip, deflate, br], connection=[keep-alive], cookie=[JSESSIONID=3858FF489F9E94A08D0061E44CE706B7]}
+[INFO]|2025-04-26 13:36:19,920|LibraryU|MyUserDetailsService|loadUserByUsername|[7ae40ecf-4f8c-494f-9357-af837ce9d0c2]|Login user from database
+[INFO]|2025-04-26 13:36:27,021|LibraryU|MyUserDetailsService|loadUserByUsername|[7f1a59d8-b4c1-47c3-84e7-5043cc5948aa]|Login user from database
+[INFO]|2025-04-26 13:36:29,931|LibraryU|MyUserDetailsService|loadUserByUsername|[921581dd-e3b7-40b8-aa76-1002f47987ee]|Login user from database
+[INFO]|2025-04-26 13:36:30,194|LibraryU|UserController|getAllUsers|[04034127-caab-4265-b326-bff2ba605c63]|Getting all users from the DataBase. Headers {authorization=[Basic dWxpc2VzOjEyMzQ1], user-agent=[PostmanRuntime/7.43.3], accept=[*/*], postman-token=[ff0ac56d-b526-460d-b6c7-c3590b672998], host=[localhost:8080], accept-encoding=[gzip, deflate, br], connection=[keep-alive], cookie=[JSESSIONID=3858FF489F9E94A08D0061E44CE706B7]}
+[INFO]|2025-04-26 13:37:48,881||GracefulShutdown|shutDownGracefully|[]|Commencing graceful shutdown. Waiting for active requests to complete
+[INFO]|2025-04-26 13:37:48,888||GracefulShutdown|doShutdown|[]|Graceful shutdown complete
+[INFO]|2025-04-26 13:37:48,892||LocalContainerEntityManagerFactoryBean|destroy|[]|Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]|2025-04-26 13:37:48,893||HikariDataSource|close|[]|HikariPool-1 - Shutdown initiated...
+[INFO]|2025-04-26 13:37:48,896||HikariDataSource|close|[]|HikariPool-1 - Shutdown completed.
+[INFO]|2025-04-26 13:38:14,744||LibraryUApplication|logStarting|[]|Starting LibraryUApplication using Java 21.0.6 with PID 4469 (/Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU/build/classes/java/main started by ulisesmorales in /Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU)
+[DEBUG]|2025-04-26 13:38:14,747||LibraryUApplication|logStarting|[]|Running with Spring Boot v3.4.4, Spring v6.2.5
+[INFO]|2025-04-26 13:38:14,747||LibraryUApplication|logStartupProfileInfo|[]|No active profile set, falling back to 1 default profile: "default"
+[INFO]|2025-04-26 13:38:14,761||DevToolsPropertyDefaultsPostProcessor|logTo|[]|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]|2025-04-26 13:38:14,761||DevToolsPropertyDefaultsPostProcessor|logTo|[]|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]|2025-04-26 13:38:14,996||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]|2025-04-26 13:38:15,018||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Finished Spring Data repository scanning in 19 ms. Found 4 JPA repository interfaces.
+[INFO]|2025-04-26 13:38:15,241||TomcatWebServer|initialize|[]|Tomcat initialized with port 8080 (http)
+[INFO]|2025-04-26 13:38:15,247||StandardService|log|[]|Starting service [Tomcat]
+[INFO]|2025-04-26 13:38:15,248||StandardEngine|log|[]|Starting Servlet engine: [Apache Tomcat/10.1.39]
+[INFO]|2025-04-26 13:38:15,261||[/]|log|[]|Initializing Spring embedded WebApplicationContext
+[INFO]|2025-04-26 13:38:15,262||ServletWebServerApplicationContext|prepareWebApplicationContext|[]|Root WebApplicationContext: initialization completed in 500 ms
+[INFO]|2025-04-26 13:38:15,328||FluentPropertyBeanIntrospector|introspect|[]|Error when creating PropertyDescriptor for public final void org.apache.commons.configuration2.AbstractConfiguration.setProperty(java.lang.String,java.lang.Object)! Ignoring this property.
+[INFO]|2025-04-26 13:38:15,360||LogHelper|logPersistenceUnitInformation|[]|HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO]|2025-04-26 13:38:15,378||Version|logVersion|[]|HHH000412: Hibernate ORM core version 6.6.11.Final
+[INFO]|2025-04-26 13:38:15,388||RegionFactoryInitiator|initiateService|[]|HHH000026: Second-level cache disabled
+[INFO]|2025-04-26 13:38:15,494||SpringPersistenceUnitInfo|addTransformer|[]|No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO]|2025-04-26 13:38:15,504||HikariDataSource|getConnection|[]|HikariPool-1 - Starting...
+[INFO]|2025-04-26 13:38:15,639||HikariPool|checkFailFast|[]|HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e786076
+[INFO]|2025-04-26 13:38:15,639||HikariDataSource|getConnection|[]|HikariPool-1 - Start completed.
+[WARN]|2025-04-26 13:38:15,657||deprecation|constructDialect|[]|HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[WARN]|2025-04-26 13:38:15,658||deprecation|logSelectedDialect|[]|HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]|2025-04-26 13:38:15,663||pooling|initiateService|[]|HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO]|2025-04-26 13:38:15,977||JtaPlatformInitiator|initiateService|[]|HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO]|2025-04-26 13:38:16,020||LocalContainerEntityManagerFactoryBean|buildNativeEntityManagerFactory|[]|Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]|2025-04-26 13:38:16,155||JpaBaseConfiguration$JpaWebConfiguration|openEntityManagerInViewInterceptor|[]|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]|2025-04-26 13:38:16,165||InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer|configure|[]|Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+[WARN]|2025-04-26 13:38:16,165||InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer|configure|[]|Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+[INFO]|2025-04-26 13:38:16,321||OptionalLiveReloadServer|startServer|[]|LiveReload server is running on port 35729
+[INFO]|2025-04-26 13:38:16,331||TomcatWebServer|start|[]|Tomcat started on port 8080 (http) with context path '/'
+[INFO]|2025-04-26 13:38:16,335||LibraryUApplication|logStarted|[]|Started LibraryUApplication in 1.751 seconds (process running for 2.057)
+[INFO]|2025-04-26 13:38:20,360||[/]|log|[]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]|2025-04-26 13:38:20,360||DispatcherServlet|initServletBean|[]|Initializing Servlet 'dispatcherServlet'
+[INFO]|2025-04-26 13:38:20,361||DispatcherServlet|initServletBean|[]|Completed initialization in 0 ms
+[INFO]|2025-04-26 13:38:20,694|LibraryU|MyUserDetailsService|loadUserByUsername|[6eb133f6-456a-44d8-b41e-01508f00ebea]|Login user from database
+[INFO]|2025-04-26 13:38:20,944|LibraryU|UserController|getAllUsers|[21b5c4db-1aad-487c-9119-d6d7293fe9bd]|Getting all users from the DataBase. Headers {authorization=[Basic dWxpc2VzOjEyMzQ1], user-agent=[PostmanRuntime/7.43.3], accept=[*/*], postman-token=[4df6bb25-9cce-440f-b2f7-bb915b95c92e], host=[localhost:8080], accept-encoding=[gzip, deflate, br], connection=[keep-alive], cookie=[JSESSIONID=3858FF489F9E94A08D0061E44CE706B7]}
+[ERROR]|2025-04-26 13:38:25,679|LibraryU|MyUserDetailsService|loadUserByUsername|[00faf20a-31eb-44ab-b992-324ddaf6d710]|Could not found the user in the database
+[INFO]|2025-04-26 13:38:30,816|LibraryU|MyUserDetailsService|loadUserByUsername|[28eba6a4-728d-461e-b898-fd2d83619f25]|Login user from database
+[INFO]|2025-04-26 13:38:31,078|LibraryU|UserController|getAllUsers|[341169ba-bf1d-4bc0-9886-9310d3c5bd1c]|Getting all users from the DataBase. Headers {authorization=[Basic dWxpc2VzOjEyMzQ1], user-agent=[PostmanRuntime/7.43.3], accept=[*/*], postman-token=[849e6f09-df63-40cc-a445-f0551d22c23d], host=[localhost:8080], accept-encoding=[gzip, deflate, br], connection=[keep-alive], cookie=[JSESSIONID=3858FF489F9E94A08D0061E44CE706B7]}
+[INFO]|2025-04-26 13:56:55,065||GracefulShutdown|shutDownGracefully|[]|Commencing graceful shutdown. Waiting for active requests to complete
+[INFO]|2025-04-26 13:56:55,072||GracefulShutdown|doShutdown|[]|Graceful shutdown complete
+[INFO]|2025-04-26 13:56:55,075||LocalContainerEntityManagerFactoryBean|destroy|[]|Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]|2025-04-26 13:56:55,076||HikariDataSource|close|[]|HikariPool-1 - Shutdown initiated...
+[INFO]|2025-04-26 13:56:55,081||HikariDataSource|close|[]|HikariPool-1 - Shutdown completed.
+[INFO]|2025-04-26 15:28:38,367||LibraryUApplication|logStarting|[]|Starting LibraryUApplication using Java 21.0.6 with PID 4783 (/Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU/build/classes/java/main started by ulisesmorales in /Users/ulisesmorales/Documents/opt/Java - Workspace/LibraryU)
+[DEBUG]|2025-04-26 15:28:38,369||LibraryUApplication|logStarting|[]|Running with Spring Boot v3.4.4, Spring v6.2.5
+[INFO]|2025-04-26 15:28:38,370||LibraryUApplication|logStartupProfileInfo|[]|No active profile set, falling back to 1 default profile: "default"
+[INFO]|2025-04-26 15:28:38,384||DevToolsPropertyDefaultsPostProcessor|logTo|[]|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]|2025-04-26 15:28:38,384||DevToolsPropertyDefaultsPostProcessor|logTo|[]|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]|2025-04-26 15:28:38,641||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]|2025-04-26 15:28:38,663||RepositoryConfigurationDelegate|registerRepositoriesIn|[]|Finished Spring Data repository scanning in 19 ms. Found 4 JPA repository interfaces.
+[INFO]|2025-04-26 15:28:38,857||TomcatWebServer|initialize|[]|Tomcat initialized with port 8080 (http)
+[INFO]|2025-04-26 15:28:38,863||StandardService|log|[]|Starting service [Tomcat]
+[INFO]|2025-04-26 15:28:38,863||StandardEngine|log|[]|Starting Servlet engine: [Apache Tomcat/10.1.39]
+[INFO]|2025-04-26 15:28:38,877||[/]|log|[]|Initializing Spring embedded WebApplicationContext
+[INFO]|2025-04-26 15:28:38,878||ServletWebServerApplicationContext|prepareWebApplicationContext|[]|Root WebApplicationContext: initialization completed in 493 ms
+[INFO]|2025-04-26 15:28:38,942||FluentPropertyBeanIntrospector|introspect|[]|Error when creating PropertyDescriptor for public final void org.apache.commons.configuration2.AbstractConfiguration.setProperty(java.lang.String,java.lang.Object)! Ignoring this property.
+[INFO]|2025-04-26 15:28:38,975||LogHelper|logPersistenceUnitInformation|[]|HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO]|2025-04-26 15:28:38,993||Version|logVersion|[]|HHH000412: Hibernate ORM core version 6.6.11.Final
+[INFO]|2025-04-26 15:28:39,003||RegionFactoryInitiator|initiateService|[]|HHH000026: Second-level cache disabled
+[INFO]|2025-04-26 15:28:39,109||SpringPersistenceUnitInfo|addTransformer|[]|No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO]|2025-04-26 15:28:39,119||HikariDataSource|getConnection|[]|HikariPool-1 - Starting...
+[INFO]|2025-04-26 15:28:39,250||HikariPool|checkFailFast|[]|HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5dfc05ae
+[INFO]|2025-04-26 15:28:39,250||HikariDataSource|getConnection|[]|HikariPool-1 - Start completed.
+[WARN]|2025-04-26 15:28:39,269||deprecation|constructDialect|[]|HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[WARN]|2025-04-26 15:28:39,269||deprecation|logSelectedDialect|[]|HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]|2025-04-26 15:28:39,275||pooling|initiateService|[]|HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO]|2025-04-26 15:28:39,589||JtaPlatformInitiator|initiateService|[]|HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO]|2025-04-26 15:28:39,628||LocalContainerEntityManagerFactoryBean|buildNativeEntityManagerFactory|[]|Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]|2025-04-26 15:28:39,757||JpaBaseConfiguration$JpaWebConfiguration|openEntityManagerInViewInterceptor|[]|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]|2025-04-26 15:28:39,766||InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer|configure|[]|Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+[WARN]|2025-04-26 15:28:39,766||InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer|configure|[]|Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+[INFO]|2025-04-26 15:28:39,924||OptionalLiveReloadServer|startServer|[]|LiveReload server is running on port 35729
+[INFO]|2025-04-26 15:28:39,934||TomcatWebServer|start|[]|Tomcat started on port 8080 (http) with context path '/'
+[INFO]|2025-04-26 15:28:39,938||LibraryUApplication|logStarted|[]|Started LibraryUApplication in 1.731 seconds (process running for 1.983)
+[INFO]|2025-04-26 15:28:44,372||[/]|log|[]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]|2025-04-26 15:28:44,373||DispatcherServlet|initServletBean|[]|Initializing Servlet 'dispatcherServlet'
+[INFO]|2025-04-26 15:28:44,373||DispatcherServlet|initServletBean|[]|Completed initialization in 0 ms
+[INFO]|2025-04-26 15:28:44,700|LibraryU|MyUserDetailsService|loadUserByUsername|[c6443466-0b9e-44b4-b2c4-85fb271f1276]|Login user from database
+[INFO]|2025-04-26 15:28:44,946|LibraryU|UserController|getAllUsers|[07d7e8ea-e353-4401-a32e-e79f3d355e05]|Getting all users from the DataBase. Headers {authorization=[Basic dWxpc2VzOjEyMzQ1], user-agent=[PostmanRuntime/7.43.3], accept=[*/*], postman-token=[e70b3193-6870-4511-8f8b-6ced47cb1fae], host=[localhost:8080], accept-encoding=[gzip, deflate, br], connection=[keep-alive], cookie=[JSESSIONID=3858FF489F9E94A08D0061E44CE706B7]}
+[INFO]|2025-04-26 15:29:17,007||GracefulShutdown|shutDownGracefully|[]|Commencing graceful shutdown. Waiting for active requests to complete
+[INFO]|2025-04-26 15:29:17,015||GracefulShutdown|doShutdown|[]|Graceful shutdown complete
+[INFO]|2025-04-26 15:29:17,018||LocalContainerEntityManagerFactoryBean|destroy|[]|Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]|2025-04-26 15:29:17,019||HikariDataSource|close|[]|HikariPool-1 - Shutdown initiated...
+[INFO]|2025-04-26 15:29:17,024||HikariDataSource|close|[]|HikariPool-1 - Shutdown completed.

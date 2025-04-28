@@ -2,7 +2,7 @@
 
 ## Description
 
-LibraryU is an API that allows managing a book library of a university. 
+LibraryU is an API that allows managing a university's book library. 
 The API Books provides functionalities to register, update, delete, and query books by various criteria, such as name, author, ISBN, availability, etc.
 
 ## Requirements

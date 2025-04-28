@@ -2,7 +2,8 @@
 
 ## Description
 
-LibraryU is an API that allows managing a book library. The API provides functionalities to register, update, delete, and query books by various criteria, such as name, author, ISBN, availability, etc.
+LibraryU is an API that allows managing a book library of a university. 
+The API Books provides functionalities to register, update, delete, and query books by various criteria, such as name, author, ISBN, availability, etc.
 
 ## Requirements
 
@@ -14,7 +15,7 @@ This project uses Spring Boot, so you need to have your JVM configured properly 
 -DLOGS_PATH=env/local/logs/ -DINSTANCE_NAME=InstanceLibrary -DPROPERTIES_PATH=env/local/
 ```
 
-# LibraryU API Documentation
+# LibraryU API Books Documentation
 
 This document provides details on the available endpoints for the LibraryU book management system.
 

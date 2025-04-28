@@ -12,6 +12,7 @@ This project uses Spring Boot, so you need to have your JVM configured properly 
 
 ```bash
 -DLOGS_PATH=env/local/logs/ -DINSTANCE_NAME=InstanceLibrary -DPROPERTIES_PATH=env/local/
+```
 
 # LibraryU API Documentation
 

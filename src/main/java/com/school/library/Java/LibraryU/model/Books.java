@@ -1,6 +1,9 @@
 package com.school.library.Java.LibraryU.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.sql.Date;
 
 @Entity
@@ -21,6 +24,7 @@ public class Books {
     private String author;
 
     @Column(name = "releaseDateBook")
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date releaseDate;
 
     @Column(name = "availability")
@@ -28,6 +32,7 @@ public class Books {
 
     @ManyToOne
     @JoinColumn(name = "loanId")
+    //@JsonBackReference
     private Loans loans;
 
     public Books(Long bookId, String isbn, String name, String author, Date releaseDate, Boolean availability, Loans loans) {

@@ -1,5 +1,6 @@
 package com.school.library.Java.LibraryU.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -29,6 +30,7 @@ public class Users {
     private String email;
 
     @OneToMany(mappedBy = "users")
+    //@JsonManagedReference
     private List<Loans> loans;
 
     public Users(Long userId, String username, String password, String name, String lastname, String email, List<Loans> loans) {

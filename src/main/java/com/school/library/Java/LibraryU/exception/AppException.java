@@ -1,4 +1,4 @@
-package com.school.library.Java.LibraryU.common;
+package com.school.library.Java.LibraryU.exception;
 
 /**
  * General non-checked exceptions class

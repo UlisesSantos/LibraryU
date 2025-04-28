@@ -79,4 +79,24 @@ public class UserController {
         return respEnt = new ResponseEntity<>(user, HttpStatus.OK);
     }
 
+    @DeleteMapping("/delete/{username}")
+    public ResponseEntity<?> deletesUserByUsername(@PathVariable String username){
+        LogConfig.initLog4j2();
+        ResponseEntity<?> respEnt = null;
+        LOGGER.info("Deleting a user by its username");
+
+        try{
+            if(username == null){
+                return respEnt = new ResponseEntity<>("Parameters Error", HttpStatus.BAD_REQUEST);
+            }
+
+            userService.deleteUserByUsername(username);
+            respEnt = new ResponseEntity<>(HttpStatus.OK);
+        }catch (Exception e){
+            respEnt = new ResponseEntity<>(e, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        return respEnt;
+    }
+
 }

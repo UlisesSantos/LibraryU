@@ -2,6 +2,8 @@ package com.school.library.Java.LibraryU.repository;
 
 import com.school.library.Java.LibraryU.model.Books;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
